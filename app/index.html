@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>D3c3</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/d3c3.css">
+  </head>
+  <body>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/d3c3.js"></script>
+    <script>
+      window.D3c3ENV = require('d3c3/config/environment')['default'];
+      window.EmberENV = window.D3c3ENV.EmberENV;
+      window.D3c3 = require('d3c3/app')['default'].create(D3c3ENV.APP);
+    </script>
+  </body>
+</html>
